@@ -21,3 +21,6 @@ Before you start the app, you will need to install the python server side script
 
 # Usage
 Launch from Workspace file, type in connection details and wait for incoming messages. 
+
+# Copyright
+Copyright 2016 Headstation. (http://headstation.com) All rights reserved. It is free software and may be redistributed under the terms specified in the LICENSE file (Apache License 2.0). 
