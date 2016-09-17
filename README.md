@@ -1,6 +1,8 @@
 # Swift Raspberry GPIO Remote
 Control your Raspberry from a Swift application using UDP and TCP Sockets. Works together with python scripts on https://github.com/matzpersson/raspberry-gpio-sockets.git
 
+![Alt text](http://headstation.com/wp-content/uploads/2016/09/iphone_gpio_remote_300.png)
+
 # Dependicies
 This code is dependent on CocoaAsyncSocket on https://github.com/robbiehanson/CocoaAsyncSocket. 
 
