@@ -2,7 +2,7 @@
 Control your Raspberry from a Swift application using UDP and TCP Sockets. Works together with python scripts on https://github.com/matzpersson/raspberry-gpio-sockets.git
 
 # Dependicies
-This code is dependent on CocoaAsyncSocket on https://github.com/robbiehanson/CocoaAsyncSocket. Requires a 
+This code is dependent on CocoaAsyncSocket on https://github.com/robbiehanson/CocoaAsyncSocket. 
 
 Install using CocoaPods by adding this line to your Podfile:
 
@@ -12,7 +12,12 @@ pod 'CocoaAsyncSocket'
 ````
 
 # Overview
-The app creates two connections to the server side Python scripts.
-# Usage
-Launch from Workspace file, type in connection details and wait for incoming messages. Use UDP Broadcasting Server https://github.com/matzpersson/udp-broadcasting.git to broadcast test messages.
+The app creates two connections to the server side Python scripts. One TCP Socket used as a point-to-point control interface enabling the app to change values on GPIO outputs. It also has a UDP Socket which the app uses to listen to for any changes on outputs or inputs on the GPIO.
 
+I used the local broadcast address for the UDP connection. On my network this was 172.16.1.255. TCP address on my network was 172.16.1.51.
+
+Before you start the app, you will need to install the python server side scripts as shown on https://github.com/matzpersson/raspberry-gpio-sockets.git
+
+
+# Usage
+Launch from Workspace file, type in connection details and wait for incoming messages. 
