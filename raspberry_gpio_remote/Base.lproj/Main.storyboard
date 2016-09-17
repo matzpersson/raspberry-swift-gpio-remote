@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3xI-oj-N2L">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ConnectViewController" customModule="raspberry_gpio_remote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server Broadcast IP ie 172.16.1.255" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eKX-es-3Of">
+                                <rect key="frame" x="20" y="257" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Server Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-gl-ALR">
+                                <rect key="frame" x="19" y="209" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imageInverseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="y1C-oU-ZjJ">
+                                <rect key="frame" x="179" y="114" width="240" height="82"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Broadcast port ie 54545" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDv-NI-P2m">
+                                <rect key="frame" x="19" y="295" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server TCP IP ie 172.16.1.51" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkR-95-wgf">
+                                <rect key="frame" x="19" y="371" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server TCP port ie 9877" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-4m-1jN">
+                                <rect key="frame" x="19" y="409" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UDP Broadcast from Raspberry-Gpio-Simulator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPN-N9-fxh">
+                                <rect key="frame" x="20" y="238" width="559" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TCP Control connection to Raspberry-Gpio-Simulator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Am-dd-xen">
+                                <rect key="frame" x="20" y="352" width="559" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8k-o2-Si9">
+                                <rect key="frame" x="271" y="454" width="59" height="30"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3N-IX-NPA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4431372549" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Am-dd-xen" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5hm-vb-Gt4"/>
+                            <constraint firstItem="7Am-dd-xen" firstAttribute="top" secondItem="SDv-NI-P2m" secondAttribute="bottom" constant="27" id="5sk-ke-0Uh"/>
+                            <constraint firstItem="SDv-NI-P2m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="9nI-Fu-lQn"/>
+                            <constraint firstItem="y1C-oU-ZjJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="AuG-eT-Fc2"/>
+                            <constraint firstItem="y1C-oU-ZjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bad-TS-3Jb"/>
+                            <constraint firstItem="WJq-4m-1jN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="Gor-5E-9Sw"/>
+                            <constraint firstItem="bkR-95-wgf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="H39-b8-bWd"/>
+                            <constraint firstItem="U8k-o2-Si9" firstAttribute="top" secondItem="WJq-4m-1jN" secondAttribute="bottom" constant="10" id="RIW-AQ-Obx"/>
+                            <constraint firstItem="U8k-o2-Si9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sas-zX-FdW"/>
+                            <constraint firstItem="bkR-95-wgf" firstAttribute="top" secondItem="7Am-dd-xen" secondAttribute="bottom" constant="3" id="TjV-C6-vyg"/>
+                            <constraint firstItem="Gag-gl-ALR" firstAttribute="top" secondItem="y1C-oU-ZjJ" secondAttribute="bottom" constant="13" id="Ur8-0e-knO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SDv-NI-P2m" secondAttribute="trailing" constant="1" id="VHk-wd-hER"/>
+                            <constraint firstItem="qPN-N9-fxh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W6Z-9m-haP"/>
+                            <constraint firstItem="eKX-es-3Of" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="amQ-yN-2qL"/>
+                            <constraint firstItem="qPN-N9-fxh" firstAttribute="top" secondItem="Gag-gl-ALR" secondAttribute="bottom" constant="8" id="hKv-9b-JVh"/>
+                            <constraint firstItem="Gag-gl-ALR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="kUJ-eP-b4Z"/>
+                            <constraint firstItem="SDv-NI-P2m" firstAttribute="top" secondItem="eKX-es-3Of" secondAttribute="bottom" constant="8" id="l0j-d3-Qlt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gag-gl-ALR" secondAttribute="trailing" constant="1" id="oeF-01-ALs"/>
+                            <constraint firstItem="eKX-es-3Of" firstAttribute="top" secondItem="qPN-N9-fxh" secondAttribute="bottom" constant="3" id="qcb-rv-1K6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WJq-4m-1jN" secondAttribute="trailing" constant="1" id="rhs-Ym-5SV"/>
+                            <constraint firstItem="eKX-es-3Of" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uSY-If-OmF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bkR-95-wgf" secondAttribute="trailing" constant="1" id="y0z-f5-QIS"/>
+                            <constraint firstItem="WJq-4m-1jN" firstAttribute="top" secondItem="bkR-95-wgf" secondAttribute="bottom" constant="8" id="yMQ-nI-M2Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Eq-xr-qYW"/>
+                    <connections>
+                        <outlet property="broadcastAddress" destination="eKX-es-3Of" id="sND-Xy-his"/>
+                        <outlet property="broadcastPort" destination="SDv-NI-P2m" id="Ln0-Xp-1vb"/>
+                        <outlet property="tcpAddress" destination="bkR-95-wgf" id="4pz-OL-RjU"/>
+                        <outlet property="tcpPort" destination="WJq-4m-1jN" id="KyK-gp-CaL"/>
+                        <segue destination="rrn-lM-Asb" kind="show" identifier="connectedSegue" id="0pv-hJ-jUX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="414"/>
+        </scene>
+        <!--GPIO Monitor-->
+        <scene sceneID="vKn-fP-Djl">
+            <objects>
+                <tableViewController id="rrn-lM-Asb" customClass="GpioTableViewController" customModule="raspberry_gpio_remote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="A45-r6-g86">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Lu9-x2-byH">
+                            <rect key="frame" x="0.0" y="64" width="600" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="bB3-ZF-Trk">
+                            <rect key="frame" x="0.0" y="233.5" width="600" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="inputCell" rowHeight="44" id="jJO-1r-LT5" customClass="InputTableViewCell" customModule="raspberry_gpio_remote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="127.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jJO-1r-LT5" id="wnU-EN-JV6">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OKE-iL-UNK">
+                                            <rect key="frame" x="12" y="14" width="14" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="14" id="NGL-KZ-hcS"/>
+                                                <constraint firstAttribute="height" constant="14" id="WNp-kO-ilA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5v-bT-CPz">
+                                            <rect key="frame" x="40" y="5" width="349" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQi-on-WZa">
+                                            <rect key="frame" x="413" y="5" width="173" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-mm-X3f">
+                                            <rect key="frame" x="40" y="22" width="349" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="AQi-on-WZa" secondAttribute="trailing" constant="6" id="3eL-uq-diX"/>
+                                        <constraint firstItem="6BM-mm-X3f" firstAttribute="top" secondItem="Z5v-bT-CPz" secondAttribute="bottom" constant="2" id="4ty-VQ-P6y"/>
+                                        <constraint firstItem="OKE-iL-UNK" firstAttribute="top" secondItem="wnU-EN-JV6" secondAttribute="topMargin" constant="6" id="JFU-s9-pEI"/>
+                                        <constraint firstItem="AQi-on-WZa" firstAttribute="top" secondItem="wnU-EN-JV6" secondAttribute="topMargin" constant="-3" id="TWh-7h-KCh"/>
+                                        <constraint firstItem="OKE-iL-UNK" firstAttribute="leading" secondItem="wnU-EN-JV6" secondAttribute="leadingMargin" constant="4" id="Tgp-Jn-V4w"/>
+                                        <constraint firstItem="Z5v-bT-CPz" firstAttribute="top" secondItem="wnU-EN-JV6" secondAttribute="topMargin" constant="-3" id="aGQ-En-0Xv"/>
+                                        <constraint firstItem="6BM-mm-X3f" firstAttribute="leading" secondItem="OKE-iL-UNK" secondAttribute="trailing" constant="14" id="hxG-wW-8tF"/>
+                                        <constraint firstItem="Z5v-bT-CPz" firstAttribute="leading" secondItem="OKE-iL-UNK" secondAttribute="trailing" constant="14" id="lbx-oN-BsQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ledImage" destination="OKE-iL-UNK" id="Aji-E0-i2i"/>
+                                    <outlet property="nameLabel" destination="Z5v-bT-CPz" id="MKI-tc-6UK"/>
+                                    <outlet property="tagLabel" destination="AQi-on-WZa" id="NM1-ze-ws2"/>
+                                    <outlet property="timeLabel" destination="6BM-mm-X3f" id="VRo-iU-bR4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="outputCell" id="gCt-zh-W8p" customClass="OutputTableViewCell" customModule="raspberry_gpio_remote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="171.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gCt-zh-W8p" id="qrv-5D-61r">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWY-w9-Wed">
+                                            <rect key="frame" x="536" y="6" width="51" height="31"/>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg3-Le-syC">
+                                            <rect key="frame" x="8" y="6" width="456" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB6-20-amK">
+                                            <rect key="frame" x="392" y="23" width="72" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-hI-KSP">
+                                            <rect key="frame" x="8" y="23.5" width="260" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lTW-U7-OoO">
+                                            <rect key="frame" x="516" y="16" width="10" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="Xaz-pu-fOe"/>
+                                                <constraint firstAttribute="width" constant="10" id="fFu-9b-6MY"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wWY-w9-Wed" firstAttribute="leading" secondItem="lTW-U7-OoO" secondAttribute="trailing" constant="10" id="20Q-0e-bly"/>
+                                        <constraint firstItem="lTW-U7-OoO" firstAttribute="top" secondItem="qrv-5D-61r" secondAttribute="topMargin" constant="8" id="AYt-o9-AaM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wWY-w9-Wed" secondAttribute="trailing" constant="7" id="Ipd-qS-8qg"/>
+                                        <constraint firstItem="yB6-20-amK" firstAttribute="top" secondItem="eg3-Le-syC" secondAttribute="bottom" constant="2" id="KVF-y7-v9p"/>
+                                        <constraint firstItem="iEF-hI-KSP" firstAttribute="top" secondItem="eg3-Le-syC" secondAttribute="bottom" constant="2.5" id="QmF-xP-whw"/>
+                                        <constraint firstItem="iEF-hI-KSP" firstAttribute="leading" secondItem="qrv-5D-61r" secondAttribute="leadingMargin" id="TDn-La-1eB"/>
+                                        <constraint firstItem="wWY-w9-Wed" firstAttribute="top" secondItem="qrv-5D-61r" secondAttribute="topMargin" constant="-2" id="URd-Ke-xM3"/>
+                                        <constraint firstItem="eg3-Le-syC" firstAttribute="top" secondItem="qrv-5D-61r" secondAttribute="topMargin" constant="-2" id="VYV-t3-shF"/>
+                                        <constraint firstItem="eg3-Le-syC" firstAttribute="leading" secondItem="qrv-5D-61r" secondAttribute="leadingMargin" id="ZoO-1D-hua"/>
+                                        <constraint firstItem="wWY-w9-Wed" firstAttribute="leading" secondItem="yB6-20-amK" secondAttribute="trailing" constant="72" id="lUH-nF-3F9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ledImage" destination="lTW-U7-OoO" id="FV4-1m-3lO"/>
+                                    <outlet property="nameLabel" destination="eg3-Le-syC" id="UCa-UE-Y8O"/>
+                                    <outlet property="onSwitch" destination="wWY-w9-Wed" id="LoI-Xp-wUs"/>
+                                    <outlet property="tagLabel" destination="iEF-hI-KSP" id="CZS-Oo-Mat"/>
+                                    <outlet property="timeLabel" destination="yB6-20-amK" id="Hkf-HV-1SQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rrn-lM-Asb" id="16f-Aw-VWr"/>
+                            <outlet property="delegate" destination="rrn-lM-Asb" id="g3p-wI-xPP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="GPIO Monitor" id="UGs-ZI-Rwu"/>
+                    <connections>
+                        <outlet property="progressActivity" destination="bB3-ZF-Trk" id="vca-gH-jNM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fa6-N1-1Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ThV-n1-6kl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xI-oj-N2L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gke-pu-YhV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.4431372549" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.4431372549" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ode-Nv-Jzv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r11-MW-IT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="414"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageInverseLogo" width="76" height="76"/>
+    </resources>
+</document>
